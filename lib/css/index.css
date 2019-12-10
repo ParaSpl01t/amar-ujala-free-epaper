@@ -1,0 +1,53 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+#app {
+	position: relative;
+	min-height: 100%;
+	color: #212121;
+	background-color: #eeeeee;
+}
+
+#app:before,
+#app:after {
+	content: " ";
+	display: table;
+}
+
+.toolbar {
+	position: absolute;
+	top:0;
+	z-index: 3;
+	width:100%;
+	background-color:inherit;
+	height: 48px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.paper {
+	position: absolute;
+	top:48px;
+	width:100%;
+	height: calc(100vh - 48px);
+	overflow:scroll;
+}
+
+.paper > img {
+	width:100%;
+	margin:0 auto;
+}
