@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Amar Ujala free epaper</title>
+	<link rel="stylesheet" href="./lib/css/index.css">
+</head>
+
+<body>
+	<div id="app">
+		<div class="toolbar">
+			<select name="city" id="citySelect">
+				<option value="none" selected disabled hidden> 
+					Select a City
+				</option>
+			</select>
+			<input type="date" name="paperDate" id="paperDate">
+			<input type="number" min="1" max="30" value="1" name="paperNumber" id="paperNumber">
+			<button id="next"> < prev </button>
+			<button id="prev"> next > </button>
+			<button id="mycity">toggle mycity</button>
+		</div>
+		<div class="paper">
+			<img id="paperTarget" src="">
+		</div>
+	</div>
+	<script src="./lib/js/index.js"></script>
+</body>
+
+</html>

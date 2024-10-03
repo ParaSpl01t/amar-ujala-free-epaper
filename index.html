@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Amar Ujala Free Epaper</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=optional"
+            rel="stylesheet"
+        />
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Amar Ujala free epaper</title>
-	<link rel="stylesheet" href="./lib/css/index.css">
-</head>
+            body {
+                margin: 0;
+                min-height: 100vh;
+                line-height: 1.5;
+                font-family: "Manrope", sans-serif;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 16px;
+                font-weight: 500;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                width: 100%;
+                max-width: 600px;
+                background-color: #fff;
+                padding: 24px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+            a {
+                text-decoration: none;
+                display: flex;
+                padding: 12px;
+                align-items: center;
+                gap: 12px;
+                background-color: #000;
+                color: #fff;
+                letter-spacing: 1px;
+                font-size: 12px;
+                border-radius: 4px;
+                font-weight: 600;
+            }
+            img {
+                height: 20px;
+                width: 20px;
+            }
 
-<body>
-	<div id="app">
-		<div class="toolbar">
-			<select name="city" id="citySelect">
-				<option value="none" selected disabled hidden> 
-					Select a City
-				</option>
-			</select>
-			<input type="date" name="paperDate" id="paperDate">
-			<input type="number" min="1" max="30" value="1" name="paperNumber" id="paperNumber">
-			<button id="next"> < prev </button>
-			<button id="prev"> next > </button>
-			<button id="mycity">toggle mycity</button>
-		</div>
-		<div class="paper">
-			<img id="paperTarget" src="">
-		</div>
-	</div>
-	<script src="./lib/js/index.js"></script>
-</body>
+            span {
+                padding-right: 12px;
+            }
 
+            div {
+                display: flex;
+                padding-top: 16px;
+                justify-content: end;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="card">
+            <h1>Under Development</h1>
+            <p>
+                This site is under maintainence. For more information, Kindly
+                refer to github page.
+            </p>
+            <div>
+                <a
+                    href="https://github.com/ParaSpl01t/amar-ujala-free-epaper/issues/2"
+                >
+                    <img
+                        src="https://ik.imagekit.io/spexoid/test/github-mark-white.svg?updatedAt=1727944910792"
+                        alt=""
+                    />
+                    <span>VIEW GITHUB ISSUE</span>
+                </a>
+            </div>
+        </section>
+    </body>
 </html>
